@@ -7,7 +7,7 @@ Este repositório é um **template** para a atividade prática individual da dis
 Para iniciar o seu trabalho, siga estes passos:
 
 1. Clique no botão verde **"Use this template"** e selecione **"Create a new repository"**.
-2. Nomeie o repositório como `ds881-curriculo-GRR99999999`.
+2. Nomeie o repositório como `ds881-curriculo-GRR20259999`.
 3. Certifique-se de que a visibilidade seja **Public**.
 4. Configure a proteção da branch `main` imediatamente (instruções na seção 2.2).
 
