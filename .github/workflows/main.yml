@@ -29,8 +29,18 @@ jobs:
       - name: Instalar dependências
         run: npm ci
 
-      - name: Build do Site Estático (Vite)
-        run: npm run build
+      - name: Organizar Arquivos Estáticos (Build)
+        run: |
+          mkdir -p dist/css dist/js dist/data
+
+          cp src/index.html dist/
+
+          [ -d "src/css" ] && cp -r src/css/* dist/css/ || true
+
+          [ -d "src/js" ] && cp -r src/js/* dist/js/ || true
+          [ -f "src/curriculo.js" ] && cp src/curriculo.js dist/js/ || true
+
+          [ -d "src/resources/data" ] && cp -r src/resources/data/* dist/data/ || true
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
