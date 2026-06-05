@@ -1,6 +1,6 @@
 async function carregarDados() {
     try {
-        const response = await fetch('./data/data.json');
+        const response = await fetch('data/data.json');
         
         if (!response.ok) {
             throw new Error(`Erro ao carregar JSON: ${response.statusText}`);
