@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  curriculo-dev:
+    build: .
+    container_name: curriculo_dev_container
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    restart: always
