@@ -2,11 +2,11 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  root: 'src',
+  root: 'src', 
+  base: '/ds881-curriculo-GRR20253044/', 
   build: {
     outDir: '../dist', 
     emptyOutDir: true, 
-    assetsDir: '.',   
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'src/index.html'),
@@ -16,12 +16,12 @@ export default defineConfig({
         chunkFileNames: 'js/[name].js',
         assetFileNames: ({ name }) => {
           if (name && name.endsWith('.css')) {
-            return 'css/curriculo.[ext]';
+            return 'css/[name].[ext]';
           }
           return '[name].[ext]';
         },
       },
     },
   },
-  publicDir: resolve(__dirname, 'src/public_assets_workaround'), 
+  publicDir: resolve(__dirname, 'src/resources'), 
 });
