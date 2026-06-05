@@ -1,0 +1,38 @@
+{
+  "nome": "Johnny Labes",
+  "titulo": "Estudante de Análise e Desenvolvimento de Sistemas",
+  "email": "johnny.labes@ufpr.br",
+  "github": "https://github.com/jlabes",
+  "linkedin": "https://linkedin.com/in/johnny-labes-a5a7a3209",
+
+  "resumo": "Estudante de Análise e Desenvolvimento de Sistemas com interesse em desenvolvimento web, Java, APIs REST e engenharia de software.",
+
+  "formacao": [
+    {
+      "curso": "Análise e Desenvolvimento de Sistemas",
+      "instituicao": "UFPR - Universidade Federal do Paraná",
+      "periodo": "2025 - Atual"
+    }
+  ],
+
+  "experiencias": [
+    {
+      "cargo": "Desenvolvedor de Software",
+      "empresa": "Empresa TS",
+      "periodo": "2021 - Atual",
+      "descricao": "Desenvolvimento e manutenção de aplicações web."
+    }
+  ],
+
+  "habilidades": [
+    "Java",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Git",
+    "GitHub",
+    "SQL"
+  ]
+}
